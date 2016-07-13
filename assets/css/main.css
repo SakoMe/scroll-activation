@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Raleway, Arial;
+}
+
+.content {
+  height: 300px;
+  background-color: #607d8b;
+}
+
+.about {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 100px 0;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(800px);
+          transform: perspective(800px);
+}
+
+.about h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.about h2, .about p {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+.about.hidden h2 {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 400px) rotateY(-40deg);
+          transform: translate3d(0, 0, 400px) rotateY(-40deg);
+}
+
+.about.hidden p {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 400px) rotateY(40deg);
+          transform: translate3d(0, 0, 400px) rotateY(40deg);
+}
